@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mindgate.main.domain.Candidate;
-import com.mindgate.main.repository.CandidateRepositoryInterface;
+import com.mindgate.main.repository.candidate.CandidateRepositoryInterface;
 @Service
 public class CandidateService implements CandidateServiceInterface {
 

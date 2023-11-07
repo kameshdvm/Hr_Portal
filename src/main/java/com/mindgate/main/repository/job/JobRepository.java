@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.job;
 
 import java.util.List;
 

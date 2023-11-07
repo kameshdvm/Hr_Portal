@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.candidate;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,6 +8,8 @@ import org.springframework.jdbc.core.RowMapper;
 import com.mindgate.main.domain.Candidate;
 import com.mindgate.main.domain.Job;
 import com.mindgate.main.domain.Project;
+import com.mindgate.main.repository.job.JobRowMapper;
+import com.mindgate.main.repository.project.ProjectRowMapper;
 
 public class CandidateRowMapper implements RowMapper<Candidate> {
 

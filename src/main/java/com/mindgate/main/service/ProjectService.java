@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mindgate.main.domain.Project;
-import com.mindgate.main.repository.ProjectRepository;
+import com.mindgate.main.repository.project.ProjectRepository;
 @Service
 public class ProjectService implements ProjectServiceInterface {
 	@Autowired

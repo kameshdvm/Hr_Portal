@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.assessment;
 
 import java.util.List;
 

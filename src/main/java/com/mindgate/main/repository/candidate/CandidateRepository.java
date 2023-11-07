@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.candidate;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.job;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.mindgate.main.domain.Job;
 import com.mindgate.main.domain.Project;
+import com.mindgate.main.repository.project.ProjectRowMapper;
 
 @Repository
 public class JobRowMapper implements RowMapper<Job> {

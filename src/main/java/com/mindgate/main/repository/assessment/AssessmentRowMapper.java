@@ -1,4 +1,4 @@
-package com.mindgate.main.repository;
+package com.mindgate.main.repository.assessment;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,6 +9,9 @@ import com.mindgate.main.domain.Assessment;
 import com.mindgate.main.domain.Candidate;
 import com.mindgate.main.domain.Job;
 import com.mindgate.main.domain.Project;
+import com.mindgate.main.repository.candidate.CandidateRowMapper;
+import com.mindgate.main.repository.job.JobRowMapper;
+import com.mindgate.main.repository.project.ProjectRowMapper;
 
 public class AssessmentRowMapper implements RowMapper<Assessment> {
 

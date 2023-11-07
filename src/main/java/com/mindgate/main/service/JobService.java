@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mindgate.main.domain.Job;
-import com.mindgate.main.repository.JobRepository;
+import com.mindgate.main.repository.job.JobRepository;
 
 @Service
 public class JobService implements JobServiceInterface {

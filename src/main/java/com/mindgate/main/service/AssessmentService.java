@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mindgate.main.domain.Assessment;
-import com.mindgate.main.repository.AssessementRepositoryInterface;
+import com.mindgate.main.repository.assessment.AssessementRepositoryInterface;
 
 @Service
 public class AssessmentService implements AssessmentServiceInterface {

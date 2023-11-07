@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mindgate.main.domain.Candidate;
-import com.mindgate.main.repository.CandidateRepositoryInterface;
+import com.mindgate.main.repository.candidate.CandidateRepositoryInterface;
 import com.mindgate.main.service.CandidateServiceInterface;
 
 @RestController
