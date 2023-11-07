@@ -22,8 +22,9 @@ public class JobRepository implements JobRepositoryInterface {
 	="delete from job_description where job_Id=?";
 	private final static String UPDATE_JOB_DESCRIPTION 
 	="update job_description set title=?,qualification=?,skill_1=?,skill_2=?,skill_3=?,project_id=?,required_employees=?,status=? where job_id=?";
-	private final static String SELECT_ALL_JOB 
-	="select job_id,title,qualification,skill_1,skill_2,skill_3,job_description.project_id,required_employees,status from job_description,project_details where job_description.project_id=project_details.project_id";
+	private final static String SELECT_ALL_JOB //= "select * from job_description";
+	//="select j.job_id,j.title,j.qualification,j.skill_1,j.skill_2,j.skill_3,j.project_id,j.required_employees,status from job_description j,project_details p where j.project_id=p.project_id";
+	="select j.job_id,j.title,j.qualification,j.skill_1,j.skill_2,j.skill_3,j.project_id,p.project_name,p.start_date,p.end_date,p.budget,j.required_employees,status from job_description j,project_details p where j.project_id=p.project_id";
 	private final static String SELECT_ONE_JOB
 	="select * from job_description where job_id=?";
 	
@@ -67,7 +68,8 @@ public class JobRepository implements JobRepositoryInterface {
 
 	@Override
 	public List<Job> getAllJob() {
-		List<Job> jobDescriptionList = jdbcTemplate.query(SELECT_ALL_JOB, jobRowMapper);
+		JobRowMapper jobMapper= new JobRowMapper();
+		List<Job> jobDescriptionList = jdbcTemplate.query(SELECT_ALL_JOB,jobMapper);
 		return jobDescriptionList;
 	}
 
