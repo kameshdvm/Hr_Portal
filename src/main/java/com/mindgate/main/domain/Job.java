@@ -8,15 +8,16 @@ public class Job {
 	private String skill1;
 	private String skill2;
 	private String skill3;
-	private Project projectId;
+	private String projectId;
 	private int requiredEmployees;
 	private String status;
+	private Project project;
 
 	public Job() {
 	}
 
 	public Job(String jobId, String title, String qualification, String skill1, String skill2, String skill3,
-			Project projectId, int requiredEmployees, String status) {
+			String projectId, int requiredEmployees, String status, Project project) {
 		super();
 		this.jobId = jobId;
 		this.title = title;
@@ -27,6 +28,7 @@ public class Job {
 		this.projectId = projectId;
 		this.requiredEmployees = requiredEmployees;
 		this.status = status;
+		this.project = project;
 	}
 
 	public String getJobId() {
@@ -77,11 +79,11 @@ public class Job {
 		this.skill3 = skill3;
 	}
 
-	public Project getProjectId() {
+	public String getProjectId() {
 		return projectId;
 	}
 
-	public void setProjectId(Project projectId) {
+	public void setProjectId(String projectId) {
 		this.projectId = projectId;
 	}
 
@@ -101,12 +103,20 @@ public class Job {
 		this.status = status;
 	}
 
+	public Project getProject() {
+		return project;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}
+
 	@Override
 	public String toString() {
 		return "Job [jobId=" + jobId + ", title=" + title + ", qualification=" + qualification + ", skill1=" + skill1
 				+ ", skill2=" + skill2 + ", skill3=" + skill3 + ", projectId=" + projectId + ", requiredEmployees="
-				+ requiredEmployees + ", status=" + status + "]";
+				+ requiredEmployees + ", status=" + status + ", project=" + project + "]";
 	}
 
-	
+		
 }

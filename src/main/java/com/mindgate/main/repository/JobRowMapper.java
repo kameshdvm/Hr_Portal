@@ -33,8 +33,8 @@ public class JobRowMapper implements RowMapper<Job> {
 		int requiredEmployees = rs.getInt("required_employees");
 		String status = rs.getString("status");
 
-		Project project = new Project(projectId, projectName, startDate, endDate, budget);
-		Job job = new Job(jobId, title, qualification, skill1, skill2, skill3, project, requiredEmployees, status);
+		Project project=new Project(projectId, projectName, startDate, endDate, budget);
+		Job job=new Job(jobId, title, qualification, skill1, skill2, skill3, projectId, requiredEmployees, status, project);
 		return job;
 	}
 }

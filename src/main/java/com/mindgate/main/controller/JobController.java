@@ -53,5 +53,4 @@ public class JobController {
 		List<Job> jobDescriptionList = jobService.getAllJob();
 		return jobDescriptionList;
 	}
-	
 }
