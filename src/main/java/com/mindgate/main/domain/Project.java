@@ -1,16 +1,13 @@
 package com.mindgate.main.domain;
 
-
-
-public class Project{
+public class Project {
 	private String projectId;
 	private String projectName;
 	private String startDate;
 	private String endDate;
 	private double budget;
-	
+
 	public Project() {
-		System.out.println("Project");
 	}
 
 	public Project(String projectId, String projectName, String startDate, String endDate, double budget) {
@@ -68,5 +65,4 @@ public class Project{
 				+ ", endDate=" + endDate + ", budget=" + budget + "]";
 	}
 
-	 
 }

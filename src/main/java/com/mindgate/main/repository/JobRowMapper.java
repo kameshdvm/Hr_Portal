@@ -26,15 +26,13 @@ public class JobRowMapper implements RowMapper<Job> {
 		String skill2 = rs.getString("skill_2");
 		String skill3 = rs.getString("skill_3");
 		String projectId = rs.getString("project_id");
-		String projectName = rs.getString("project_name");
-		String startDate = rs.getString("start_date");
-		String endDate = rs.getString("end_date");
-		int budget = rs.getInt("budget");
 		int requiredEmployees = rs.getInt("required_employees");
 		String status = rs.getString("status");
 
-		Project project=new Project(projectId, projectName, startDate, endDate, budget);
-		Job job=new Job(jobId, title, qualification, skill1, skill2, skill3, projectId, requiredEmployees, status, project);
+		ProjectRowMapper projectRowMapper = new ProjectRowMapper();
+		Project project = projectRowMapper.mapRow(rs, rowNum);
+		Job job = new Job(jobId, title, qualification, skill1, skill2, skill3, projectId, requiredEmployees, status,
+				project);
 		return job;
 	}
 }

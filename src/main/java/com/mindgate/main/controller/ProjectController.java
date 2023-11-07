@@ -13,7 +13,7 @@ import com.mindgate.main.domain.Project;
 import com.mindgate.main.service.ProjectServiceInterface;
 
 @RestController
-@RequestMapping("projectapi")
+@RequestMapping("projectApi")
 public class ProjectController {
 	@Autowired
 	private ProjectServiceInterface projectServiceInterface;

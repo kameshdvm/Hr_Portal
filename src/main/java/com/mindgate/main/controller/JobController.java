@@ -13,7 +13,7 @@ import com.mindgate.main.domain.Job;
 import com.mindgate.main.service.JobService;
 
 @RestController
-@RequestMapping("job")
+@RequestMapping("jobApi")
 public class JobController {
 	
 	@Autowired

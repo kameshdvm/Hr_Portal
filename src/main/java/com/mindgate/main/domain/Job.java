@@ -118,5 +118,4 @@ public class Job {
 				+ requiredEmployees + ", status=" + status + ", project=" + project + "]";
 	}
 
-		
 }
